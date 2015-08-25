@@ -3,7 +3,7 @@
  */
 public class Problem5 {
     public static void main(String[] args) {
-        System.out.println(19*17*13*11*18*7*10*16);
+        System.out.println(1*(2*2*2*2)*(3*3)*5*7*11*13*17*19);
     }
 
 }
