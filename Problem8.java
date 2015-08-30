@@ -32,22 +32,16 @@ public class Problem8 {
         long maxNum = 0;
         long tmpNum;
 
-        int start;
-        int end = 12;
-
-        while (end < 100) {
-            start = end - 12;
-            while (start <= end) {
-                tmpNum *=
+        for (int i = 0; i < 100; i++) {
+            for (int j = i; j < i + 13; j++) {
+                tmpNum *= (num.charAt(j) - 48);
             }
-
-        }
-
-        for (int i = 12; i < 100; i++) {
-            for (int j = i - 12; j < i + 1; j++) {
-
+            if (tmpNum > maxNum) {
+                maxNum = tmpNum;
             }
         }
+
+        System.out.println(maxNum);
 
     }
 
