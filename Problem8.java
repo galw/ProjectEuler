@@ -30,12 +30,13 @@ public class Problem8 {
                 "05886116467109405077541002256983155200055935729725" +
                 "71636269561882670428252483600823257530420752963450";
         long maxNum = 0;
-        long tmpNum;
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 988; i++) {
+        long tmpNum = 1;
             for (int j = i; j < i + 13; j++) {
                 tmpNum *= (num.charAt(j) - 48);
             }
+            //System.out.println(tmpNum);
             if (tmpNum > maxNum) {
                 maxNum = tmpNum;
             }
