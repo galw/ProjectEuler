@@ -43,6 +43,12 @@ public class Problem8 {
 
         }
 
+        for (int i = 12; i < 100; i++) {
+            for (int j = i - 12; j < i + 1; j++) {
+
+            }
+        }
+
     }
 
 }
